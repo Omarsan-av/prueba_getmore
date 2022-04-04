@@ -22,7 +22,7 @@ function Carousel ()
          {
             info.style.display= 'block';
          }
-
+         
          container.style.transform = `translateX(${ operation }%)`;
 
          point.forEach(( eachPoint, i ) => 
