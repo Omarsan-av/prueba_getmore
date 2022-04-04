@@ -1,6 +1,6 @@
 .active
 {
-   transform: translate(-600px);
+   transform: translate(600px);
 }
 
 .menu-list
@@ -17,7 +17,7 @@
    .list
    {
       list-style: none;
-      padding: 60px 0px 20px 0px;
+      padding: 80px 0px 20px 0px;
 
       &__item
       {
@@ -45,7 +45,8 @@
    height: 40px;
    margin: 0;
    position: absolute;
-   right: 20px;
+   left: 40px;
+   transition: 1s ease-in;
    top: 20px;
    width: 40px;
    z-index: 1;

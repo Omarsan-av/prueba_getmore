@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 6.25%;
+}
+
+.background {
+  background-image: url("https://omarsav.com/images/getmore/groupx2.png");
+  background-position: 55%;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.ball {
+  display: none;
+  padding: 20px;
+}
+
+.container-main {
+  margin: 0 auto;
+  padding-top: 65%;
+  width: 80%;
+}
+
+.container-main__title {
+  color: #fff;
+  font-weight: normal;
+  font-size: 36rem;
+  letter-spacing: -0.5px;
+  line-height: 1.28;
+  padding-bottom: 40px;
+}
+
+.container-main__title span {
+  color: #cbe346;
+  font-weight: bold;
+}
+
+.container-main .button {
+  background-color: transparent;
+  border-radius: 26.5px;
+  border: solid 1px #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14rem;
+  font-weight: bold;
+  height: 53px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.5;
+  padding: 15px 39px 15px 30px;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 269px;
+}
+
+.container-main .arrow {
+  width: 23px;
+}
+/*# sourceMappingURL=index.css.map */
