@@ -54,7 +54,7 @@
   transition: all .5s ease;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  width: 200%;
+  width: 400%;
 }
 
 .carousel .container__img {

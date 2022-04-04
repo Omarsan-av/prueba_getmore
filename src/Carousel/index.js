@@ -12,7 +12,7 @@ function Carousel ()
       point[i].addEventListener('click', () =>
       {
          let position  = i;
-         let operation = position * - 50
+         let operation = position * - 25;
 
          if(position != 0)  
          {
@@ -44,8 +44,8 @@ function Carousel ()
          <div className="container">
             <img src="https://omarsav.com/images/getmore/image1.png" alt="Imagen 1" className="container__img image1"/>
             <img src="https://omarsav.com/images/getmore/racket.png" alt="Imagen 2" className="container__img"/>
-            <img src="https://omarsav.com/images/getmore/racket.png" alt="Imagen 2" className="container__img"/>
-            <img src="https://omarsav.com/images/getmore/racket.png" alt="Imagen 2" className="container__img"/>
+            <img src="https://omarsav.com/images/getmore/racket.png" alt="Imagen 3" className="container__img"/>
+            <img src="https://omarsav.com/images/getmore/racket.png" alt="Imagen 4" className="container__img"/>
          </div>
 
          <ul className="points">
