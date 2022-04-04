@@ -1,5 +1,166 @@
-.image-background {
-  background-image: url("https://omarsav.com/images/getmore/background_tennis.png");
-  height: 586px;
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .info {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+}
+
+.carousel .info h2 {
+  letter-spacing: -0.6px;
+  font-weight: normal;
+  font-size: 36rem;
+  position: absolute;
+  left: 37vw;
+  top: 37px;
+  color: #fff;
+}
+
+.carousel .info h3 {
+  font-size: 14rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.67;
+  position: relative;
+  top: 135px;
+  left: 37vw;
+  width: 52%;
+  color: #fff;
+}
+
+.carousel .info span {
+  font-weight: bold;
+}
+
+.carousel .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 200%;
+}
+
+.carousel .container__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+}
+
+.carousel .points {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.carousel .points .point {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cbe346;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px;
+  width: 40px;
+}
+
+.carousel .points .point.is-active {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.arrow-left {
+  -webkit-transform: rotate(55deg);
+          transform: rotate(55deg);
+}
+
+@media screen and (min-width: 500px) {
+  .carousel {
+    width: 100%;
+    position: relative;
+  }
+  .carousel .info {
+    position: absolute;
+    z-index: 1;
+    height: 423px;
+    width: 480px;
+  }
+  .carousel .info h2 {
+    left: 175px;
+    top: 42px;
+    font-size: 50px;
+  }
+  .carousel .info h3 {
+    display: inline-block;
+    font-size: 18rem;
+    left: 175;
+    top: 175px;
+    width: 50%;
+  }
+  .carousel .container {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    width: 100%;
+  }
+  .carousel .container .image1 {
+    height: 423px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 480px;
+    margin: 0;
+  }
+  .carousel .container__img {
+    height: 330px;
+    width: auto;
+    margin: 0 15px;
+  }
+  .carousel .points {
+    bottom: 50px;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    left: 160px;
+    width: auto;
+  }
+  .carousel .points .point {
+    height: 45px;
+    width: 45px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

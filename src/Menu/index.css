@@ -1,3 +1,7 @@
+.menu-desktop {
+  display: none;
+}
+
 .active {
   -webkit-transform: translate(-600px);
           transform: translate(-600px);
@@ -99,5 +103,53 @@
 
 .openmenu .icon-burger__line-2 {
   width: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-mobile {
+    display: none;
+  }
+  .menu-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 37px;
+    margin: 0;
+    margin-left: 173px;
+    position: relative;
+    top: 44px;
+  }
+  .menu-desktop__item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style: none;
+    position: relative;
+    margin-right: 50px;
+  }
+  .menu-desktop__item a {
+    color: #fff;
+    font-size: 16rem;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+  }
+  .menu-desktop__item a::before {
+    background-color: white;
+    bottom: 8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 0;
+  }
+  .menu-desktop__item a:hover::before {
+    width: 20px;
+  }
+  .menu-desktop__item a:hover {
+    font-weight: bold;
+  }
 }
 /*# sourceMappingURL=index.css.map */

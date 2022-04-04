@@ -1,5 +1,161 @@
-.image-background
+.carousel
 {
-   background-image: url('https://omarsav.com/images/getmore/background_tennis.png');
-   height: 586px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .info 
+    {
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+
+        h2 
+        {
+            letter-spacing: -0.6px;
+            font-weight: normal;
+            font-size: 36rem;
+            position: absolute;
+            left: 37vw;
+            top: 37px;
+            color: $white;  
+        }
+
+        h3 
+        {
+            font-size: 14rem;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            line-height: 1.67;
+            position: relative;
+            top: 135px;
+            left: 37vw;
+            width: 52%;
+            color: $white;
+        }
+
+        span 
+        {
+            font-weight: bold;
+        }
+    }
+
+    .container
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .5s ease;
+        transform: translateX(0%);
+        width: 200%;
+
+        &__img
+        {
+            object-fit: cover;
+            width: 100vw;
+        }   
+    }
+
+    .points
+    {
+        align-items: center;
+        bottom: 40px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        position: absolute;
+        width:100%;
+
+        .point
+        {
+            align-items: center;
+            background-color: $yellow;
+            border-radius: 50%;
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            margin: 0 10px;
+            width: 40px;
+        }
+
+        .point.is-active
+        {
+            background-color: transparent;
+            border: 2px solid $white;
+        }
+    }
+}
+
+.arrow-left 
+{
+    transform: rotate(55deg);
+}
+
+@media screen and (min-width:500px) 
+{
+    .carousel
+    {
+        width: 100%;
+        position: relative;
+
+        .info 
+        {
+            position: absolute;
+            z-index: 1;
+            height: 423px;
+            width: 480px;
+
+            h2 
+            {
+                left: 175px;
+                top: 42px;
+                font-size: 50px;
+            }
+
+            h3 
+            {
+                display: inline-block;
+                font-size: 18rem;
+                left: 175;
+                top: 175px;
+                width: 50%;
+            }
+        }
+
+        .container 
+        {
+            justify-content: unset;
+            width: 100%;
+            
+            .image1
+            {
+                height: 423px;
+                object-fit: cover;
+                width: 480px;
+                margin: 0;
+            }
+
+            &__img
+            {   
+                height: 330px;
+                width: auto;
+                margin: 0 15px;
+            }
+        }
+
+        .points 
+        {
+            bottom: 50px;
+            justify-content: unset;
+            left: 160px;
+            width: auto;
+
+            .point 
+            {
+                height: 45px;
+                width: 45px;
+            }
+        }
+    }
 }

@@ -14,7 +14,7 @@
 
 .container-main {
   margin: 0 auto;
-  padding-top: 65%;
+  padding-top: 40vh;
   width: 80%;
 }
 
@@ -25,6 +25,7 @@
   letter-spacing: -0.5px;
   line-height: 1.28;
   padding-bottom: 40px;
+  width: 300px;
 }
 
 .container-main__title span {
@@ -59,5 +60,34 @@
 
 .container-main .arrow {
   width: 23px;
+}
+
+.container-main .line {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-main {
+    padding-top: 30vh;
+    width: 75%;
+  }
+  .container-main__title {
+    width: 700px;
+    font-size: 53rem;
+  }
+  .line {
+    background: #fff;
+    display: block;
+    height: 100vh;
+    margin-left: 105px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+  }
+  .ball {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

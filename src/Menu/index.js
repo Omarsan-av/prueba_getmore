@@ -14,12 +14,12 @@ function Menu ()
 
    return(
       <React.Fragment>
-         {/* <ul className="menu-desktop">
-            <li className="item"><a href="#">Inicio</a></li>
-            <li className="item"><a href="#">Acerca de nosotros</a></li>
-            <li className="item"><a href="#">Historia</a></li>
-            <li className="item"><a href="#">Contacto</a></li>
-         </ul> */}
+         <ul className="menu-desktop">
+            <li className="menu-desktop__item"><a href="#">Inicio</a></li>
+            <li className="menu-desktop__item"><a href="#">Acerca de nosotros</a></li>
+            <li className="menu-desktop__item"><a href="#">Historia</a></li>
+            <li className="menu-desktop__item"><a href="#">Contacto</a></li>
+         </ul>
 
          <div className="menu-list active" id="menu-list">
             <ul className="list">

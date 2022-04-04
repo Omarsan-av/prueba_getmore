@@ -6,6 +6,7 @@ function ContainerPrincipal (props)
    return(
       <main className="background">
          {props.children}
+         <div className="line"></div>
          <img className="ball" src='https://omarsav.com/images/getmore/ball.svg' alt="image ball"/>
          <div className="container-main">
             <h1 className="container-main__title">Las mejores raquetas para jugar <span>Tennis</span></h1>

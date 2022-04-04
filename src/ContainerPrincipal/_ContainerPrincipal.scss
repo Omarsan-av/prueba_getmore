@@ -17,7 +17,7 @@
 .container-main 
 {
    margin: 0 auto;
-   padding-top: 65%;
+   padding-top: 40vh;
    width: 80%;
 
    &__title
@@ -28,6 +28,7 @@
       letter-spacing: -0.5px;
       line-height: 1.28;
       padding-bottom: 40px;
+      width: 300px;
 
       span 
       {
@@ -60,5 +61,43 @@
    .arrow
    {
       width: 23px;
+   }
+
+   .line
+   {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 1024px)
+{
+   .container-main 
+   {
+      padding-top: 30vh;
+      width: 75%;
+
+      &__title 
+      {
+         width: 700px;
+         font-size: 53rem;
+      }
+   }
+
+   .line 
+   {
+      background: $white;
+      display: block;
+      height: 100vh;
+      margin-left: 105px;
+      position: absolute;
+      top: 0;
+      width: 2px;
+   }
+
+   .ball 
+   {
+      display: block;
+      position: absolute;
+      top: 0;
    }
 }
