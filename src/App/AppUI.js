@@ -3,6 +3,7 @@ import { ContainerPrincipal } from '../ContainerPrincipal'
 import { Menu } from '../Menu';
 import { Accesories } from '../Accesories';
 import { Carousel } from '../Carousel';
+import { Footer } from '../Footer';
 
 function AppUI ()
 {
@@ -13,6 +14,7 @@ function AppUI ()
          </ContainerPrincipal>
          <Accesories/>
          <Carousel/>
+         <Footer/>
       </React.Fragment>
    );
 }

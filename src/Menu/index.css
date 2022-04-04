@@ -15,18 +15,19 @@
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
   width: 400px;
+  z-index: 1;
 }
 
 .menu-list .list {
   list-style: none;
-  padding: 80px 0px 20px 0px;
+  padding: 100px 0px 20px 0px;
 }
 
-.menu-list .list__item {
+.menu-list .list__item a {
   color: #000;
   cursor: pointer;
   display: block;
-  font-size: 18rem;
+  font-size: 22rem;
   padding: 10px 40px;
   text-decoration: none;
 }

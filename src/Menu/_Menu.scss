@@ -13,18 +13,19 @@
    top: 0;
    transition: all .5s ease-in;
    width: 400px;
+   z-index: 1;
 
    .list
    {
       list-style: none;
-      padding: 80px 0px 20px 0px;
+      padding: 100px 0px 20px 0px;
 
-      &__item
+      &__item a
       {
          color: $black;
          cursor: pointer;
          display: block;
-         font-size: 18rem;
+         font-size: 22rem;
          padding: 10px 40px;
          text-decoration: none;
       }
