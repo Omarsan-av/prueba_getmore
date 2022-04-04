@@ -1,6 +1,6 @@
 .active
 {
-   transform: translate(600px);
+   transform: translate(-600px);
 }
 
 .menu-list
@@ -43,9 +43,9 @@
    border-radius: 5px;
    cursor: pointer;
    height: 40px;
+   left: 40px;
    margin: 0;
    position: absolute;
-   left: 40px;
    transition: 1s ease-in;
    top: 20px;
    width: 40px;

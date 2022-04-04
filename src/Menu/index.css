@@ -9,9 +9,13 @@ html {
   font-size: 6.25%;
 }
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .active {
-  -webkit-transform: translate(600px);
-          transform: translate(600px);
+  -webkit-transform: translate(-600px);
+          transform: translate(-600px);
 }
 
 .menu-list {
@@ -53,9 +57,9 @@ html {
   border-radius: 5px;
   cursor: pointer;
   height: 40px;
+  left: 40px;
   margin: 0;
   position: absolute;
-  left: 40px;
   -webkit-transition: 1s ease-in;
   transition: 1s ease-in;
   top: 20px;

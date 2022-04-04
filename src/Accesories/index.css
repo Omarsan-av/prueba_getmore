@@ -1,0 +1,114 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 6.25%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.accesories {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 340px;
+  width: 100%;
+}
+
+.accesories__title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #282e47;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 34rem;
+  font-weight: normal;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+  height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: -0.6px;
+  line-height: 1.14;
+}
+
+.accesories__description {
+  font-size: 18rem;
+  font-weight: normal;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 3 / 3;
+  letter-spacing: 0.5px;
+  line-height: 1.78;
+  padding: 0 50px;
+}
+
+.accesories__tennis {
+  color: #cbe346;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15rem;
+  font-weight: 500;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1.87px;
+  text-transform: uppercase;
+}
+
+.accesories__button {
+  background-color: transparent;
+  border: solid 1px #282e47;
+  border-radius: 26.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #282e47;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14rem;
+  font-weight: bold;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 4 / 3;
+  height: 53px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.5;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+.accesories__button .arrow {
+  width: 23px;
+}
+/*# sourceMappingURL=index.css.map */

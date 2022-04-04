@@ -1,7 +1,7 @@
 import React from "react";
 import { ContainerPrincipal } from '../ContainerPrincipal'
 import { Menu } from '../Menu';
-
+import { Accesories } from '../Accesories';
 
 function AppUI ()
 {
@@ -10,6 +10,7 @@ function AppUI ()
          <ContainerPrincipal>
             <Menu/>
          </ContainerPrincipal>
+         <Accesories/>
       </React.Fragment>
    );
 }
