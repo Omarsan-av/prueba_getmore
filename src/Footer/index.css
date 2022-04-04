@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.footer {
+  background: #cbe346;
+  position: absolute;
+  width: 100%;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 50px 50px 0;
+}
+
+.footer-menu li {
+  padding: 8px 0;
+}
+
+.footer-menu__item {
+  color: #2b3049;
+  font-size: 16rem;
+  text-decoration: none;
+}
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 30px 50px 50px 32px;
+  width: 80%;
+}
+
+.ball-footer {
+  left: 75%;
+  position: relative;
+  top: 50px;
+}
+/*# sourceMappingURL=index.css.map */

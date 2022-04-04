@@ -24,8 +24,8 @@ function Menu ()
          <div className="menu-list active" id="menu-list">
             <ul className="list">
                <li className="list__item"><a href="#"> Inicio </a></li>
-               <li className="list__item"><a href="#"> Acerca de nosotros </a></li>
-               <li className="list__item"><a href="#"> historia </a></li>
+               <li className="list__item"><a href="#"> Acerca de nosotros /a</a></li>
+               <li className="list__item"><a href="#"> Historia </a></li>
                <li className="list__item"><a href="#"> Contacto </a></li>
             </ul>
          </div>

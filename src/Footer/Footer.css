@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=Footer.css.map */
+.footer-menu {
+  padding: 50px;
+  list-style: none;
+}
+
+.footer-menu li {
+  padding: 8px 0;
+}
+
+.footer-menu__item {
+  font-size: 16rem;
+  text-decoration: none;
+  color: #2b3049;
+}
+/*# sourceMappingURL=Footer.css.map */
