@@ -1,92 +1,65 @@
 .carousel {
-  width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
-}
-
-.carousel .info {
-  position: absolute;
-  z-index: 1;
-  width: 500px;
+  width: 100vw;
 }
 
 .carousel .info h2 {
-  letter-spacing: -0.6px;
+  color: #fff;
   font-weight: normal;
   font-size: 36rem;
-  position: absolute;
   left: 37vw;
+  letter-spacing: -0.6px;
+  position: absolute;
   top: 37px;
-  color: #fff;
+  z-index: 1;
 }
 
 .carousel .info h3 {
-  font-size: 14rem;
+  color: #fff;
+  font-size: 16rem;
   font-weight: normal;
+  left: 37vw;
   letter-spacing: 0.5px;
   line-height: 1.67;
-  position: relative;
-  top: 135px;
-  left: 37vw;
+  position: absolute;
+  top: 150px;
   width: 52%;
-  color: #fff;
-}
-
-.carousel .info span {
-  font-weight: bold;
+  z-index: 1;
 }
 
 .carousel .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   width: 400%;
 }
 
-.carousel .container__img {
+.carousel .container img {
+  height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100vw;
 }
 
 .carousel .points {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: 40px;
+  bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  left: 150px;
   position: absolute;
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .carousel .points .point {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: transparent;
-  border: 2px solid #fff;
+  background: #cbe346;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,72 +68,50 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 10px;
+  margin-right: 20px;
   width: 40px;
 }
 
-.carousel .points .point.is-active {
-  background-color: #cbe346;
-  border: none;
-}
-
-.arrow-left {
-  -webkit-transform: rotate(55deg);
-          transform: rotate(55deg);
+.carousel .points .arrow-left {
+  left: 14px;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media screen and (min-width: 500px) {
-  .carousel {
-    width: 100%;
-    position: relative;
-  }
-  .carousel .info {
-    position: absolute;
-    z-index: 1;
-    height: 423px;
-    width: 480px;
-  }
   .carousel .info h2 {
-    left: 175px;
-    top: 42px;
-    font-size: 50px;
+    font-size: 50rem;
+    left: 200px;
+    top: 50px;
   }
   .carousel .info h3 {
-    display: inline-block;
     font-size: 18rem;
-    left: 175;
-    top: 175px;
-    width: 50%;
+    left: 200px;
+    top: 190px;
+    width: 250px;
   }
   .carousel .container {
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
-  .carousel .container .image1 {
-    height: 423px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 480px;
-    margin: 0;
-  }
-  .carousel .container__img {
-    height: 330px;
-    width: auto;
-    margin: 0 15px;
-  }
-  .carousel .points {
-    bottom: 50px;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
-    left: 160px;
+  .carousel .container img {
+    height: 340px;
+    margin-right: 30px;
     width: auto;
   }
-  .carousel .points .point {
-    height: 45px;
-    width: 45px;
+  .carousel .container img:first-child {
+    height: 450px;
+    margin-right: 50px;
+  }
+  .carousel .container .points {
+    left: 200px;
+    bottom: 65px;
   }
 }
 /*# sourceMappingURL=index.css.map */

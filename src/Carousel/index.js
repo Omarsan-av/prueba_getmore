@@ -3,43 +3,56 @@ import './index.css';
 
 function Carousel ()
 {
-   const container = document.querySelector('.container');
-   const point = document.querySelectorAll('.point');
-   const info = document.querySelector('.info');
 
-   point.forEach(( eachPoint , i ) => 
-   {
-      point[i].addEventListener('click', () =>
+   window.addEventListener('DOMContentLoaded', (event) => {
+      const container = document.getElementsByClassName('container');
+      const btnLeft = document.getElementById('left');
+      const btnRight = document.getElementById('right');   
+      const text = document.getElementsByClassName('info');
+
+      let position = 0;
+
+      const showHide = ()=>
       {
-         let position  = i;
-         let operation = position * - 25;
-
-         if(position != 0)  
+         if(position === 0)
          {
-            info.style.display= 'none';
+            text[0].style.display = 'block';
          }
+
          else 
          {
-            info.style.display= 'block';
+            text[0].style.display = 'none';
          }
-         
-         container.style.transform = `translateX(${ operation }%)`;
+      }
 
-         point.forEach(( eachPoint, i ) => 
-         { 
-            point[i].classList.remove('is-active');
-         })
-
-         point[i].classList.add('is-active');
+      btnRight.addEventListener('click', () =>
+      {
+         if(position > -75)
+         {
+            position = position - 25;
+            container[0].style.transform = `translateX(${position}%)`;
+            showHide();
+         }
       })
-   })
 
+      btnLeft.addEventListener('click', () =>
+      {  
+         if(position < 0)
+         {
+            position = position + 25;
+            container[0].style.transform = `translateX(${position}%)`;
+            showHide();
+         }
+      })
+
+   });
+   
    return(
       <div className="carousel">
          <div className="info">
             <h2>Nuestras <br/> <span>Raquetas</span></h2>
             <h3>Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.</h3>
-         </div>
+         </div> 
 
          <div className="container">
             <img src="https://omarsav.com/images/getmore/image1.png" alt="Imagen 1" className="container__img image1"/>
@@ -49,8 +62,8 @@ function Carousel ()
          </div>
 
          <ul className="points">
-            <li className="point is-active"><img className="arrow-left" src="https://omarsav.com/images/getmore/arrow_direction.svg"/></li>
-            <li className="point"><img src="https://omarsav.com/images/getmore/arrow_direction.svg"/></li>
+            <li id="left" className="point is-active"><img className="arrow-left" src="https://omarsav.com/images/getmore/arrow_direction.svg"/></li>
+            <li id="right" className="point"><img src="https://omarsav.com/images/getmore/arrow_direction.svg"/></li>
          </ul>
       </div>
    );
