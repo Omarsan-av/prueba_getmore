@@ -7,7 +7,6 @@
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   height: 340px;
-  padding-bottom: 50px;
   width: 100%;
 }
 
@@ -67,13 +66,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 1.87px;
-  margin-top: 40px;
   text-transform: uppercase;
 }
 
 .accesories__button {
-  -ms-flex-item-align: end;
-      align-self: end;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-color: transparent;
   border: solid 1px #282e47;
   border-radius: 26.5px;
@@ -96,6 +94,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   line-height: 1.5;
+  max-width: 250px;
   padding: 15px 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -160,7 +159,6 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=index.css.map */
