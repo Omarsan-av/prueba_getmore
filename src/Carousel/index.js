@@ -3,49 +3,42 @@ import './index.css';
 
 function Carousel ()
 {
+   const container = document.getElementsByClassName('container');
+   const text = document.getElementsByClassName('info');
+   let position = 0;
 
-   window.addEventListener('DOMContentLoaded', (event) => {
-      const container = document.getElementsByClassName('container');
-      const btnLeft = document.getElementById('left');
-      const btnRight = document.getElementById('right');   
-      const text = document.getElementsByClassName('info');
-
-      let position = 0;
-
-      const showHide = ()=>
+   const showHide = ()=>
+   {
+      if(position === 0)
       {
-         if(position === 0)
-         {
-            text[0].style.display = 'block';
-         }
-
-         else 
-         {
-            text[0].style.display = 'none';
-         }
+         text[0].style.display = 'block';
       }
 
-      btnRight.addEventListener('click', () =>
+      else 
       {
-         if(position > -75)
-         {
-            position = position - 25;
-            container[0].style.transform = `translateX(${position}%)`;
-            showHide();
-         }
-      })
+         text[0].style.display = 'none';
+      }
+   }
 
-      btnLeft.addEventListener('click', () =>
-      {  
-         if(position < 0)
-         {
-            position = position + 25;
-            container[0].style.transform = `translateX(${position}%)`;
-            showHide();
-         }
-      })
+   const buttonRigth = () =>
+   {
+      if(position > -75)
+      {
+         position = position - 25;
+         container[0].style.transform = `translateX(${position}%)`;
+         showHide();
+      }
+   }
 
-   });
+   const buttonLeft = () =>
+   {
+      if( position < 0 ) 
+      {
+         position = position + 25;
+         container[0].style.transform = `translateX(${position}%)`;
+         showHide();
+      }
+   }
    
    return(
       <div className="carousel">
@@ -62,8 +55,12 @@ function Carousel ()
          </div>
 
          <ul className="points">
-            <li id="left" className="point is-active"><img className="arrow-left" src="https://omarsav.com/images/getmore/arrow_direction.svg"/></li>
-            <li id="right" className="point"><img src="https://omarsav.com/images/getmore/arrow_direction.svg"/></li>
+            <li id="left" className="point is-active" onClick={buttonLeft}>
+               <img className="arrow-left" src="https://omarsav.com/images/getmore/arrow_direction.svg"/>
+            </li>
+            <li id="right" className="point" onClick={buttonRigth}>
+               <img src="https://omarsav.com/images/getmore/arrow_direction.svg"/>
+            </li>
          </ul>
       </div>
    );
