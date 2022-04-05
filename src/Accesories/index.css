@@ -7,7 +7,7 @@
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   height: 340px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   width: 100%;
 }
 
