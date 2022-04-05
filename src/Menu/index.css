@@ -124,7 +124,8 @@
             box-sizing: border-box;
     list-style: none;
     position: relative;
-    margin-right: 50px;
+    margin-right: 40px;
+    width: 100px;
   }
   .menu-desktop__item a {
     color: #fff;
@@ -150,6 +151,12 @@
   }
   .menu-desktop__item a:hover {
     font-weight: bold;
+  }
+  .menu-desktop__item:first-child {
+    width: 60px;
+  }
+  .menu-desktop__item:nth-child(2) {
+    width: 180px;
   }
 }
 /*# sourceMappingURL=index.css.map */

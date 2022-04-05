@@ -126,7 +126,8 @@
          box-sizing: border-box;
          list-style: none;
          position: relative;
-         margin-right: 50px;
+         margin-right: 40px;
+         width: 100px;
 
          a 
          {
@@ -159,6 +160,16 @@
          {
             font-weight: bold;
          }
+      }
+
+      &__item:first-child
+      {
+         width: 60px;
+      }
+
+      &__item:nth-child(2)
+      {
+         width: 180px;
       }
    }   
 }

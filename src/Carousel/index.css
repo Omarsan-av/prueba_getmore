@@ -60,7 +60,6 @@
 .carousel .container__img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100vw;
 }
 
 .carousel .points {
@@ -86,7 +85,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #cbe346;
+  background-color: transparent;
+  border: 2px solid #fff;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,8 +100,8 @@
 }
 
 .carousel .points .point.is-active {
-  background-color: transparent;
-  border: 2px solid #fff;
+  background-color: #cbe346;
+  border: none;
 }
 
 .arrow-left {

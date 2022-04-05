@@ -53,7 +53,7 @@
         &__img
         {
             object-fit: cover;
-            width: 100vw;
+            // width: 100%;
         }   
     }
 
@@ -70,7 +70,8 @@
         .point
         {
             align-items: center;
-            background-color: $yellow;
+            background-color: transparent;
+            border: 2px solid $white;
             border-radius: 50%;
             display: flex;
             height: 40px;
@@ -78,11 +79,11 @@
             margin: 0 10px;
             width: 40px;
         }
-
+        
         .point.is-active
         {
-            background-color: transparent;
-            border: 2px solid $white;
+            background-color: $yellow;
+            border:none;
         }
     }
 }
