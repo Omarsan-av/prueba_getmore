@@ -4,6 +4,30 @@
   position: relative;
 }
 
+.carousel .info h2 {
+  letter-spacing: -0.6px;
+  font-weight: normal;
+  font-size: 36rem;
+  position: absolute;
+  left: 37vw;
+  top: 37px;
+  color: #fff;
+  z-index: 1;
+}
+
+.carousel .info h3 {
+  font-size: 16rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.67;
+  position: absolute;
+  top: 150px;
+  left: 37vw;
+  width: 52%;
+  color: #fff;
+  z-index: 1;
+}
+
 .carousel .container {
   width: 400%;
   -webkit-transition: -webkit-transform 0.5s ease;
